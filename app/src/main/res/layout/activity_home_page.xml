@@ -7,4 +7,122 @@
     android:layout_height="match_parent"
     tools:context=".HomePage">
 
+    <LinearLayout
+        android:id="@+id/sellwithus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/register_dropdown">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_sell"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Add Sale"
+
+            app:maxImageSize="25dp"
+            android:src="@drawable/outline_add_24"
+            app:backgroundTint="@color/white"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="0dp"
+            app:tint="@android:color/black"
+
+
+            app:useCompatPadding="true" />
+
+        <TextView
+            android:id="@+id/sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell with us"
+            android:textAlignment="center"
+            android:textSize="10sp"
+
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sellwithus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0">
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Register as..."
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+        <!-- Dropdown Icon -->
+        <ImageView
+            android:id="@+id/dropdown_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="Choose Role"
+            android:src="@drawable/outline_arrow_drop_down_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/testimony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sellwithus" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/testimonial"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="testimonial"
+
+            app:maxImageSize="25dp"
+            android:src="@drawable/outline_chat_bubble_24"
+            app:backgroundTint="@color/white"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="0dp"
+            app:tint="@android:color/black"
+
+
+            app:useCompatPadding="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testimonials"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"/>
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
