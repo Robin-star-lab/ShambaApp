@@ -51,7 +51,7 @@
         android:id="@+id/register_dropdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginRight="10dp"
         android:clickable="true"
 
         android:focusable="true"
@@ -75,19 +75,21 @@
             android:textStyle="bold"/>
 
         <!-- Dropdown Icon -->
-        <ImageView
-            android:id="@+id/dropdown_icon"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:contentDescription="Choose Role"
-            android:src="@drawable/outline_arrow_drop_down_24" />
+        <Spinner
+            android:id="@+id/role_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/strings" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/testimony"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
         android:orientation="vertical"
         android:gravity="center"
         app:layout_constraintVertical_bias="1"
@@ -123,6 +125,30 @@
             android:layout_marginTop="0dp"/>
 
     </LinearLayout>
+
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0"/>
+
+
+
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
